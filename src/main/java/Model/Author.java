@@ -7,6 +7,14 @@ public class Author {
     private int numberOfBooks;
     private String nationality;
 
+    //This only shows on featureB
+
+    public Author(String name, int numberOfBooks, String nationality) {
+        this.name = name;
+        this.numberOfBooks = numberOfBooks;
+        this.nationality = nationality;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -53,11 +61,5 @@ public class Author {
 
     public String getNationality() {
         return nationality;
-    }
-
-    public Author(String name, int numberOfBooks, String nationality) {
-        this.name = name;
-        this.numberOfBooks = numberOfBooks;
-        this.nationality = nationality;
     }
 }
