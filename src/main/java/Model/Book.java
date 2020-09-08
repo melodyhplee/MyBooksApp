@@ -9,6 +9,16 @@ public class Book {
     private int year;
     private String author;
 
+    //This only shows for featureA
+
+    public Book(String title, String isbn, String publisher, int year, String author) {
+        this.title = title;
+        this.isbn = isbn;
+        this.publisher = publisher;
+        this.year = year;
+        this.author = author;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -44,14 +54,6 @@ public class Book {
 
     public String getAuthor() {
         return author;
-    }
-
-    public Book(String title, String isbn, String publisher, int year, String author) {
-        this.title = title;
-        this.isbn = isbn;
-        this.publisher = publisher;
-        this.year = year;
-        this.author = author;
     }
 
     @Override
